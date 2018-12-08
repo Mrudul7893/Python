@@ -1,0 +1,10 @@
+import sys
+
+print("Version of python is", sys.version)
+
+a = "hello world"
+b = "python is an awesome language"
+c = "I am a beginner in python"
+print(a)
+print(b)
+print(c)
