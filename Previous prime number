@@ -23,3 +23,37 @@ try:
 
 except ValueError:
     print("Invalid input: Enter an integer")
+
+
+Test  cases:
+Test cases:
+
+1.input - 3
+Expected output - 5
+
+2.input - 1
+Expected output - 2 is the smallest prime number
+
+3.input - 10
+Expected output - 11
+
+4.input - -3
+Expected output - 2 is the smallest prime number
+
+5.Input - 0  
+Expected output - 2 is the smallest prime number
+
+6.input - @#$%
+Expected output - Invalid input: Enter an integer
+
+7.input - adf554
+Expected output - Invalid input: Enter an integer
+
+8.Input - 365165.651465     
+Expected output - Invalid input: Enter an integer
+
+9.Input - @fsd58
+Expected output - Invalid input: Enter an integer
+
+10.Input - @3
+Expected output - Invalid input: Enter an integer
