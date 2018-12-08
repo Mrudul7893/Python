@@ -20,5 +20,23 @@ a = input("please enter your name")
 if a.isalpha():
     greeting(a)
 else:
-    print("invalid input")
+    print("Enter a string")
 
+#testcases
+Get the name of the user as inputs and greet the user saying "Good Morning, <firstname>" or "Good Afternoon, <firstname>" depending upon the time of the day
+    -------------------------------------------
+	Input	|	Output
+    -------------------------------------------
+	56	|	Enter a string
+    -------------------------------------------
+	asd	|	<greeting>, asd
+    -------------------------------------------
+	@#$	|	Enter a string
+    -------------------------------------------
+	2.5	|	Enter a string
+    -------------------------------------------
+	-2	|	Enter a string
+    -------------------------------------------
+	 0	|	Enter a string.
+    -------------------------------------------
+	asd fg  | 	<greeting>, asd
