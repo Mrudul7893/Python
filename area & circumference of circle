@@ -1,12 +1,19 @@
 def circum(a):
-    circumference = 2 * 3.24 * a
-    print("Circumference is ", circumference)
+    if a < 0:
+    	print("Enter a positive number")
+	exit()
+    else:
+    	circumference = 2 * 3.24 * a
+    	print("Circumference is ", circumference)
 
 
 def area(a):
-
-    area = 3.14 * a * a
-    print("area is ", area)
+    if a < 0:
+    	print("Enter a positive number")
+	exit()
+    else:
+	area = 3.14 * a * a
+        print("area is ", area)
 
 
 try:
@@ -16,7 +23,7 @@ try:
 
 
 except ValueError:
-    print("Enter an integer")
+    print("Enter Valid Input")
 
 
 Testcase:
