@@ -1,0 +1,12 @@
+def radius(a):
+    r = a/3.14
+    rad = r**.5
+    print("Radius is", rad)
+
+
+try:
+    x = float(input("enter the area of the circle"))
+    radius(x)
+
+except ValueError:
+    print("Enter an integer")
