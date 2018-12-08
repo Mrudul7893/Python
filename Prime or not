@@ -1,0 +1,17 @@
+def prime(a):
+    i = 2
+    while i < a//2+1:
+        y = a % i
+        if y == 0:
+            print(a, "is not a prime number ")
+        else:
+            print(a, "is a prime number ")
+
+
+try:
+    x = int(input("enter a number:"))
+    prime(x)
+
+
+except ValueError:
+    print("Enter an integer")
