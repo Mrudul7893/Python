@@ -1,0 +1,25 @@
+def camelcase(a):
+
+    inp = a.split(" ")
+    camel = []
+    for letter in inp:
+        final_words = letter[0].upper() + letter[1:]
+        camel.append(final_words)
+    output = " ".join(camel)
+    print(output)
+
+
+def upper(a):
+    a = a.upper()
+    print(a)
+
+
+def lower(a):
+    a = a.lower()
+    print(a)
+
+
+x = input("Enter a string \n").lower()
+camelcase(x)
+upper(x)
+lower(x)
