@@ -1,0 +1,7 @@
+def length():
+    inpu = input("Enter a string \n")
+    output = len(inpu)
+    print("The length of the string is ",output)
+
+
+length()
