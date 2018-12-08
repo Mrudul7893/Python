@@ -1,0 +1,77 @@
+
+def menu():
+    tea = 100
+    coffee = 100
+    milk = 100
+
+    sold_milk = 0
+    sold_coffee = 0
+    sold_tea = 0
+    tt = 0
+    tc = 0
+    tm = 0
+    print("                 ************WELCOME**************")
+
+    choice = input("""
+                      1: Tea
+                      2: Coffee
+                      3: Milk
+                      4: Overall Sales
+                      5: Quit
+                      Please enter your choice: """
+                   )
+
+    if choice == "1":
+
+        tea_cups = int(input("you chose tea. how many cup of tea would you have?"))
+        tea -= tea_cups
+        if tea <= 0:
+            print("tea is not available right now. please choose any other beverage")
+        else:
+            sold_tea += tea_cups
+            print("Your order is in the kitchen. Please wait a moment")
+            tt = sold_tea * 10
+
+    if choice == "2":
+        print("you chose coffee. how many cups of coffee would you have?")
+        coffee_cups = int(input())
+        coffee -= coffee_cups
+        if coffee <= 0:
+            print("coffee is not available right now. please choose any other beverage")
+        else:
+            sold_coffee += coffee_cups
+            print("Your order is in the kitchen. Please wait a moment")
+            tc = sold_coffee * 12
+
+    if choice == "3":
+
+        print("you chose milk. how many cup of milk would you have?")
+        milk_cups = int(input())
+        milk -= milk_cups
+        if milk <= 0:
+            print("milk is not available right now. please choose any other beverage")
+        else:
+            sold_milk += milk_cups
+            print("Your order is in the kitchen. Please wait a moment")
+            tm = sold_milk * 15
+
+    if choice == "4":
+        cost = tt+tc+tm
+        print("Sales")
+        print("Tea    :", sold_tea, "Amount:", tt,
+              "Coffee :", sold_coffee, "Amount:", tc,
+              "Milk   :", sold_milk, "Amount:", tm,
+              "Total  :", cost)
+        exit()
+
+    if choice == "5":
+        exit()
+
+    else:
+        print("You must only select either 1,2,3,4, or 5.")
+        print("Please try again")
+    menu()
+
+
+menu()
+
