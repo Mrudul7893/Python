@@ -1,0 +1,22 @@
+def circum(a):
+    circumference = 2 * 3.24 * a
+    print("Circumference is ", circumference)
+
+
+def area(a):
+
+    area = 3.14 * a * a
+    print("area is ", area)
+
+
+try:
+    x = float(input("enter the radius of the circle"))
+    circum(x)
+    area(x)
+
+
+except ValueError:
+    print("Enter an integer")
+
+
+
