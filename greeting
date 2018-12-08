@@ -1,0 +1,24 @@
+
+import datetime
+
+
+def greeting(a):
+    currenttime = datetime.datetime.now()
+    currenttime.hour
+    if currenttime.hour < 12:
+        print('Good morning', a)
+        exit()
+    if (currenttime.hour > 12) and (currenttime.hour < 17):
+        print('Good afternoon', a)
+        exit()
+    if currenttime.hour > 17:
+        print('Good evening', a)
+        exit()
+
+
+a = input("please enter your name")
+if a.isalpha():
+    greeting(a)
+else:
+    print("invalid input")
+
