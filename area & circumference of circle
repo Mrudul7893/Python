@@ -19,4 +19,24 @@ except ValueError:
     print("Enter an integer")
 
 
+Testcase:
 
+Given the radius of the circle, write a program to print the circumference and area of the circle. 
+Write functions to calculate area and circumference
+
+	Input	|	output
+	--------|-------------------------
+	12	| Area: 452.15999999999997
+		| Circumference: 75.36
+	--------|-------------------------
+	ab	| Enter Valid Input
+	--------|-------------------------
+	@#	| Enter Valid Input
+	--------|-------------------------
+	0	| Enter a positive number
+	--------|-------------------------
+	-3	| Enter a positive number
+	--------|-------------------------
+	2E	| Enter Valid Input
+	--------|-------------------------
+	e05	|  Enter Valid Input
