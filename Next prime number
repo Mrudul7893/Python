@@ -1,30 +1,32 @@
 def nextprime(n):
 
     if n < 2:
-        print("2")
+        return 2
         exit()
+    else:
+        while True:
+            n += 1
+            for i in range(2,n):
+                if n % i == 0:
+                    break
 
-    while True:
-        n += 1
-        for i in range(2,n):
-            if n % i == 0:
+            else:
+                return n
                 break
 
-        else:
-            print(n)
-            break
+def main():
+    try:
+        x = int(input("enter a number:"))
+        nextprime(x)
 
 
-try:
-    x = int(input("enter a number:"))
-    nextprime(x)
+    except ValueError:
+        print("Enter a valid integer")
 
 
-except ValueError:
-    print("Enter a valid integer")
+main()
 
-
-Test cases:
+("""Test cases:
 
 1.input - 3
 Expected output - 5
@@ -54,4 +56,4 @@ Expected output - Enter a valid Integer
 Expected output - Enter a valid Integer
 
 10.Input - @3
-Expected output - Enter a valid Integer
+Expected output - Enter a valid Integer """)
