@@ -1,0 +1,18 @@
+import datetime
+
+
+def main():
+    year = int(input("enter a year"))
+    month = int(input("enter a month"))
+    date = int(input("enter a date"))
+    a = dated(year,month,date)
+    print(a)
+
+
+def dated(year,month,date):
+    today = datetime.date.today()
+    day = datetime.date(year, month, date)
+    diff = today - day
+    return diff
+
+main()
