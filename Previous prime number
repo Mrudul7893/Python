@@ -18,8 +18,8 @@ def prevprime(n):
 def main():
     try:
         x = int(input("enter a number:"))
-        prevprime(x)
-
+        a = prevprime(x)
+        print(a)
 
     except ValueError:
         print("Invalid input: Enter an integer")
