@@ -1,0 +1,30 @@
+a = []
+even = []
+odd = []
+
+
+def main():
+    try:
+        n = int(input("Enter number of elements:"))
+        for i in range(0, n):
+            b = int(input("Enter element:"))
+            a.append(b)
+
+    except ValueError:
+        print("Enter an integer")
+
+
+def even_odd():
+    for j in a:
+        if j % 2 == 0:
+            even.append(j)
+        else:
+            odd.append(j)
+
+
+even_odd()
+
+print("The even list",even)
+print("The odd list",odd)
+print("even sum: ",sum(even))
+print("odd sum: ",sum(odd))
