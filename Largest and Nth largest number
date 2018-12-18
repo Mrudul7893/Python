@@ -1,0 +1,29 @@
+def main():
+    a = []
+    try:
+        n = int(input("Enter number of elements:"))
+        for i in range(0, n):
+            b = int(input("Enter element:"))
+            a.append(b)
+    except ValueError:
+        print("Enter an integer")
+
+
+def largest():
+    a.sort(reverse=True)
+    return a[0]
+
+
+def nthlarge():
+    k = int(input("enter the value of n\n"))
+    if k <= len(a):
+
+        a.sort()
+        return a[k-1]
+    else:
+        print("Please enter a number smaller than the length of the list.")
+        nthlarge()
+
+
+print("largest number is :", largest())
+print("nth largest number is :", nthlarge())
