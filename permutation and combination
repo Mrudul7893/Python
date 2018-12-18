@@ -1,0 +1,60 @@
+
+def perm(a,b):
+    if a > 0:
+        n_fact = 1
+        r_fact = 1
+
+        for a in range(1, a + 1):
+            n_fact = n_fact * a
+
+        c = a - b
+        for c in range(1,c+1):
+            r_fact = r_fact * c
+
+        permutation = (n_fact / r_fact)
+        return permutation
+    else:
+        print("please enter a positive number")
+        exit()
+
+
+def combination(a,b):
+    if a > 0:
+        n_fact = 1
+        r_minus_fact = 1
+        r_fact = 1
+
+        for a in range(1, a + 1):
+            n_fact = n_fact * a
+
+        c = a - b
+        for c in range(1, c + 1):
+            r_minus_fact = r_minus_fact * c
+
+        for b in range(1,b+1):
+            r_fact = r_fact * b
+
+        combine = (n_fact / (r_fact * r_minus_fact))
+        return combine
+    else:
+        print("please enter a positive number")
+        exit()
+
+
+def main():
+    try:
+        n = int(input("Enter value of n\n"))
+        p = int(input("Enter value of r\n"))
+        if p > n:
+            print("the value of r cant be greater than n")
+            exit()
+        else:
+            a = perm(n,p)
+            b = combination(n,p)
+            print("permutation :",a)
+            print("combination :",b)
+    except ValueError:
+        print("Invalid Input: Enter an integer")
+
+
+main()
