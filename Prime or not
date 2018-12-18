@@ -13,8 +13,8 @@ def prime(a):
 def main():
     try:
         x = int(input("enter a number:"))
-        prime(x)
-
+        a = prime(x)
+        print(a)
     except ValueError:
         print("Enter a valid integer")
 
