@@ -20,11 +20,10 @@ def even_odd():
             even.append(j)
         else:
             odd.append(j)
+    result = odd + even
+    return result
 
 
-even_odd()
-
-print("The even list",even)
-print("The odd list",odd)
+print (" the sorted list is \n", even_odd())
 print("even sum: ",sum(even))
 print("odd sum: ",sum(odd))
