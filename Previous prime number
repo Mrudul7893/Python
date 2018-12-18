@@ -15,16 +15,20 @@ def prevprime(n):
                 print(n)
                 break
 
-
-try:
-    x = int(input("enter a number:"))
-    prevprime(x)
-
-
-except ValueError:
-    print("Invalid input: Enter an integer")
+def main():
+    try:
+        x = int(input("enter a number:"))
+        prevprime(x)
 
 
+    except ValueError:
+        print("Invalid input: Enter an integer")
+
+
+main()
+
+
+("""
 Test  cases:
 Test cases:
 
@@ -57,3 +61,5 @@ Expected output - Invalid input: Enter an integer
 
 10.Input - @3
 Expected output - Invalid input: Enter an integer
+
+""")
