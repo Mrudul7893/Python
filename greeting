@@ -15,13 +15,17 @@ def greeting(a):
         print('Good evening', a)
         exit()
 
+def main():
+	a = input("please enter your name")
+	if a.isalpha():
+    	greeting(a)
+	else:
+    	print("Enter a string")
 
-a = input("please enter your name")
-if a.isalpha():
-    greeting(a)
-else:
-    print("Enter a string")
 
+main()
+
+("""
 #testcases
 Get the name of the user as inputs and greet the user saying "Good Morning, <firstname>" or "Good Afternoon, <firstname>" depending upon the time of the day
     -------------------------------------------
@@ -40,3 +44,4 @@ Get the name of the user as inputs and greet the user saying "Good Morning, <fir
 	 0	|	Enter a string.
     -------------------------------------------
 	asd fg  | 	<greeting>, asd
+""")
