@@ -10,14 +10,18 @@ def prime(a):
             print(a, "is a prime number ")
 
 
-try:
-    x = int(input("enter a number:"))
-    prime(x)
+def main():
+    try:
+        x = int(input("enter a number:"))
+        prime(x)
+
+    except ValueError:
+        print("Enter a valid integer")
 
 
-except ValueError:
-    print("Enter a valid integer")
+main()
 
+("""
 Test cases:
 
 Test case for 8th (Given a number, find whether or not it is prime)
@@ -51,6 +55,4 @@ Expected output - Enter a valid Integer
 
 10.Input - @3
 Expected output - Enter a valid Integer
-
-
-
+""")
