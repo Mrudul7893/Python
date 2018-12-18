@@ -4,7 +4,7 @@ def circum(a):
 	exit()
     else:
     	circumference = 2 * 3.24 * a
-    	print("Circumference is ", circumference)
+    	return circumference
 
 
 def area(a):
@@ -13,17 +13,18 @@ def area(a):
 	exit()
     else:
 	area = 3.14 * a * a
-        print("area is ", area)
+        return area
 
 
 def main():
 	try:
-    	x = float(input("enter the radius of the circle"))
-    	circum(x)
-    	area(x)
-
+	    	x = float(input("enter the radius of the circle"))
+	    	a = circum(x)
+    		b = area(x)
+		print("", a)
+		print("", b)
 	except ValueError:
-    	print("Enter Valid Input")
+    		print("Enter Valid Input")
 
 
 main()
