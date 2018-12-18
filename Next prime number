@@ -17,7 +17,8 @@ def nextprime(n):
 def main():
     try:
         x = int(input("enter a number:"))
-        nextprime(x)
+        a = nextprime(x)
+        print(a)
 
 
     except ValueError:
